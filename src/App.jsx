@@ -73,7 +73,7 @@ const TOP_PROJECTS = [
     problem: "Businesses lose leads due to unresponsive 24/7 support and pay high costs for complex AI chatbots that hallucinate and lack seamless human handoff.",
     desc: "A decoupled, zero-cost, cross-platform 24/7 AI chatbot ecosystem built to eliminate customer churn and automate business lead generation. Designed with a strict API-first architecture, it combines a high-speed LLM reasoning engine with Retrieval-Augmented Generation (RAG) and a continuous Human-in-the-Loop (HITL) learning pipeline.",
     tech: ["Python", "FastAPI", "Groq (Llama 3.1)", "ChromaDB", "SQLite", "Streamlit", "Vanilla JS"],
-    github: "#",
+    github: "https://github.com/rmlkloch/LeadMe.git",
     vercel: "https://lead-me-cyan.vercel.app",
     streamlit: "https://leadme-hacdsgh4dxulmy47v5warf.streamlit.app",
     apiDocs: "https://leadme-backend.onrender.com/docs",
@@ -106,7 +106,7 @@ const OTHER_PROJECTS = [
   { id: 2, title: "LeadMe AI Chatbot Ecosystem", category: "Applied NLP & Knowledge Retrieval", key: "nlp",
     desc: "Decoupled 24/7 AI chatbot ecosystem with ultra-fast RAG inference (Groq/ChromaDB), automated Human-in-the-Loop lead capture, and a self-learning knowledge base.",
     tech: ["Python", "FastAPI", "Groq", "ChromaDB", "Streamlit", "Vanilla JS"],
-    github: "#",
+    github: "https://github.com/rmlkloch/LeadMe.git",
     vercel: "https://lead-me-cyan.vercel.app",
     streamlit: "https://leadme-hacdsgh4dxulmy47v5warf.streamlit.app",
     apiDocs: "https://leadme-backend.onrender.com/docs",
@@ -140,9 +140,9 @@ const LEADERSHIP = [
       { text: "Managed event logistics & vendor relations" },
     ],
   },
-  { id: 2, iconColor: "#F59E0B", isMedal: true,
+  { id: 2, iconColor: "#F59E0B", iconBg: "rgba(16,185,129,0.15)", isMedal: true,
     title: "NSBM Taekwondo Club",
-    subtitle: "Yellow Belt",
+    subtitle: "Junior Green Belt",
     desc: "Competed as a solo trainee at NSBM Sports Fiesta 2026, demonstrating competitive discipline, grit, and the ability to perform under pressure.",
     items: [
       { title: "Poomsae",  tournament: "NSBM Sports Fiesta 2026", medal: "Gold",   emoji: "🥇", color: "#F59E0B" },
@@ -1316,7 +1316,7 @@ function Leadership() {
           {LEADERSHIP.map(c => (
             <div key={c.id} className="card card-hover leadership-card">
               <div className="leadership-header">
-                <div className="leadership-icon" style={{ background: `${c.iconColor}14` }}>
+                <div className="leadership-icon" style={{ background: c.iconBg || `${c.iconColor}14` }}>
                   {c.isMedal ? <Award size={24} color={c.iconColor} /> : <Star size={24} color={c.iconColor} />}
                 </div>
                 <div>
