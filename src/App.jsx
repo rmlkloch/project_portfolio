@@ -82,21 +82,6 @@ const TOP_PROJECTS = [
       "Decoupled RESTful API backend allows clients to plug AI directly into React/Next.js apps.",
     ],
   },
-  {
-    id: 2, category: "Applied NLP & Knowledge Retrieval",
-    title: "LeadMe: AI Lead Capture & Auto-Learning FAQ",
-    badge: "Featured AI Ecosystem", accent: "#8B5CF6",
-    problem: "Businesses lose qualified leads and face high churn due to delayed support responses and rigid chatbots that hallucinate or fail on off-knowledge questions.",
-    desc: "A decoupled 24/7 AI chatbot ecosystem combining Groq (Llama 3.1) and ChromaDB vector memory for sub-second retrieval, paired with a Human-in-the-Loop (HITL) learning pipeline that automatically re-embeds resolved support tickets into vector memory.",
-    tech: ["Python", "FastAPI", "Groq", "Llama 3.1", "ChromaDB", "RAG", "Streamlit", "Vanilla JS", "Render", "Vercel"],
-    live: "https://lead-me-cyan.vercel.app",
-    apiDocs: "https://leadme-backend.onrender.com/docs",
-    bullets: [
-      "Utilized Groq (Llama-3.1-8b) and ChromaDB vector memory for sub-second, hallucination-free RAG retrieval.",
-      "Implemented autonomous fallback lead capture and Streamlit HITL dashboard for continuous AI learning.",
-      "Engineered zero-dependency, glassmorphism Vanilla JS widget embeddable via a single script tag.",
-    ],
-  },
 ];
 
 const OTHER_PROJECTS = [
@@ -106,12 +91,6 @@ const OTHER_PROJECTS = [
     github: "https://github.com/rmlkloch/customer-churn-risk-api.git",
     live: "https://customer-churn-risk-api-jsnvxagbpmhe5msv4ix6l.streamlit.app/",
     apiDocs: "https://customer-churn-risk-api.onrender.com/docs",
-  },
-  { id: 2, title: "LeadMe AI Lead Capture & FAQ System", category: "Applied NLP & Knowledge Retrieval", key: "nlp",
-    desc: "Decoupled 24/7 AI chatbot and auto-learning RAG ecosystem featuring sub-second Groq inference, ChromaDB vector memory, and Human-in-the-Loop ticket resolution fallback.",
-    tech: ["Python", "FastAPI", "Groq", "Llama 3.1", "ChromaDB", "Streamlit", "Vanilla JS", "Render", "Vercel"],
-    live: "https://lead-me-cyan.vercel.app",
-    apiDocs: "https://leadme-backend.onrender.com/docs",
   },
 ];
 
@@ -1363,7 +1342,7 @@ function Contact({ copyEmail }) {
           <p className="label">Hire Me</p>
           <h2 className="heading" style={{ fontSize: "clamp(2.2rem,5vw,3.8rem)" }}>Let's Build Together</h2>
           <p className="body-text" style={{ maxWidth: 480, margin: "0 auto 2.75rem", fontSize: "1.05rem" }}>
-            My inbox is always open. Whether you have a robust project, a fractional retainer opportunity, or just want to connect, I'll reply within 24 hours.
+            My inbox is always open. Whether you have a robust project, a fractional retainer opportunity, or just want to connect - I'll reply within 24 hours.
           </p>
 
           <div className="card contact-card">
