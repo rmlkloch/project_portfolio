@@ -92,7 +92,7 @@ const TOP_PROJECTS = [
     desc: "A machine-learning-powered API and interactive dashboard designed to shift retention strategies from reactive to proactive. Processes incoming user behavior payloads to return a real-time probability score and business risk level.",
     tech: ["Python", "FastAPI", "Random Forest", "Streamlit", "Joblib", "Render"],
     github: "https://github.com/rmlkloch/customer-churn-risk-api.git",
-    live: "https://customer-churn-risk-api-jsnvxagbpmhe5msv4ix6l.streamlit.app/",
+    live: "https://customer-churn-risk-api-jsnvxagbpmkhe5msv4ix6l.streamlit.app/",
     apiDocs: "https://customer-churn-risk-api.onrender.com/docs",
     bullets: [
       "Engineered realistic synthetic SaaS dataset & deployed RF model as a live web service.",
@@ -115,7 +115,7 @@ const OTHER_PROJECTS = [
     desc: "Decoupled FastAPI microservice and Streamlit dashboard that processes live SaaS user behavior to return real-time churn probability scores using Random Forest.",
     tech: ["FastAPI", "Random Forest", "Python", "Streamlit", "Render"],
     github: "https://github.com/rmlkloch/customer-churn-risk-api.git",
-    live: "https://customer-churn-risk-api-jsnvxagbpmhe5msv4ix6l.streamlit.app/",
+    live: "https://customer-churn-risk-api-jsnvxagbpmkhe5msv4ix6l.streamlit.app/",
     apiDocs: "https://customer-churn-risk-api.onrender.com/docs",
   },
 ];
@@ -487,7 +487,7 @@ const CSS = `
   .fade-up {
     opacity: 0; transform: translateY(40px);
     transition: opacity 0.85s cubic-bezier(0.16,1,0.3,1),
-    transform 0.85s cubic-bezier(0.16,1,0.3,1);
+                transform 0.85s cubic-bezier(0.16,1,0.3,1);
   }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
 
@@ -1370,7 +1370,7 @@ function Contact({ copyEmail }) {
           <p className="label">Hire Me</p>
           <h2 className="heading" style={{ fontSize: "clamp(2.2rem,5vw,3.8rem)" }}>Let's Build Together</h2>
           <p className="body-text" style={{ maxWidth: 480, margin: "0 auto 2.75rem", fontSize: "1.05rem" }}>
-            My inbox is always open. Whether you have a robust project, a fractional retainer opportunity, or just want to connect — I'll reply within 24 hours.
+            My inbox is always open. Whether you have a robust project, a fractional retainer opportunity, or just want to connect - I'll reply within 24 hours.
           </p>
 
           <div className="card contact-card">
