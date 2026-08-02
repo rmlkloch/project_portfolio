@@ -6,9 +6,9 @@ import {
   ArrowRight, Code, Database, Zap, Activity, Server, ArrowLeft,
 } from "lucide-react";
 
-/* -----------------------------------------
+/* ─────────────────────────────────────────
    SVG BRAND ICONS
------------------------------------------ */
+───────────────────────────────────────── */
 const Github = ({ size = 24 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none"
     stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -34,9 +34,9 @@ const Fiverr = ({ size = 24 }) => (
   </svg>
 );
 
-/* -----------------------------------------
+/* ─────────────────────────────────────────
    DATA
------------------------------------------ */
+───────────────────────────────────────── */
 const PERSONAL = {
   name: "R.M Lochana Kalhara Ranathunga",
   shortName: "R.M.L.K.",
@@ -51,8 +51,8 @@ const PERSONAL = {
 };
 
 const SKILLS = [
-  { category: "Languages",            items: ["Python", "SQL", "C/C++", "R"] },
-  { category: "ML & Data",            items: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "OpenCV"] },
+  { category: "Languages",            items: ["Python", "SQL", "C/C++", "R", "JavaScript", "HTML/CSS"] },
+  { category: "ML & Data",            items: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "OpenCV", "ChromaDB", "Groq"] },
   { category: "Engineering & Cloud",  items: ["Docker", "Kubernetes", "CI/CD", "Snowflake", "FastAPI"] },
 ];
 
@@ -164,9 +164,9 @@ const NAV_SECTIONS = ["about", "services", "projects", "research", "leadership"]
 const TRACKER_SECTIONS = ["about", "services", "projects", "research", "leadership", "hireme"];
 const TRACKER_LABELS  = ["About", "Services", "Projects", "Research", "Leadership", "Contact"];
 
-/* -----------------------------------------
+/* ─────────────────────────────────────────
    GLOBAL STYLES
------------------------------------------ */
+───────────────────────────────────────── */
 const CSS = `
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap');
 
@@ -185,7 +185,7 @@ const CSS = `
   ::-webkit-scrollbar-thumb { background: #C0C0C0; border-radius: 3px; }
   ::-webkit-scrollbar-thumb:hover { background: #A0A0A0; }
 
-  /* -- DESIGN TOKENS -- */
+  /* ── DESIGN TOKENS ── */
   :root {
     --accent:    #10B981;
     --text:      #111827;
@@ -206,7 +206,7 @@ const CSS = `
     --nav-h:     70px;
   }
 
-  /* -- LAYOUT -- */
+  /* ── LAYOUT ── */
   .container {
     width: 100%;
     max-width: 1100px;
@@ -221,7 +221,7 @@ const CSS = `
     width: 100%;
   }
 
-  /* -- TYPOGRAPHY -- */
+  /* ── TYPOGRAPHY ── */
   .font-display { font-family: 'Outfit', sans-serif; }
   .font-body    { font-family: 'Nunito Sans', sans-serif; }
 
@@ -264,7 +264,7 @@ const CSS = `
     letter-spacing: 0;
   }
 
-  /* -- CARDS -- */
+  /* ── CARDS ── */
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -284,7 +284,7 @@ const CSS = `
     border-color: #B8B8B8;
   }
 
-  /* -- BUTTONS -- */
+  /* ── BUTTONS ── */
   .btn {
     display: inline-flex;
     align-items: center;
@@ -324,7 +324,7 @@ const CSS = `
   }
   .btn-icon:hover { color: var(--text); }
 
-  /* -- CHIPS -- */
+  /* ── CHIPS ── */
   .chip {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 0.75rem;
@@ -361,7 +361,7 @@ const CSS = `
     100% { box-shadow: 0 0 0 0 rgba(59,130,246,0); }
   }
 
-  /* -- DIVIDER BAR -- */
+  /* ── DIVIDER BAR ── */
   .accent-bar {
     width: 48px; height: 3px;
     background: var(--accent);
@@ -369,7 +369,7 @@ const CSS = `
     margin-bottom: 2rem;
   }
 
-  /* -- FILTER BUTTONS -- */
+  /* ── FILTER BUTTONS ── */
   .filter-pill {
     padding: 0.45rem 1.2rem;
     border-radius: 100px;
@@ -384,7 +384,7 @@ const CSS = `
   .filter-pill-inactive { background: rgba(255,255,255,0.6); color: var(--muted); border: 1px solid var(--border); }
   .filter-pill-inactive:hover { border-color: #9B9B9B; color: var(--text); }
 
-  /* -- NAV -- */
+  /* ── NAV ── */
   .nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 200;
     height: var(--nav-h);
@@ -483,15 +483,15 @@ const CSS = `
   /* HIDE MISSING TRACKER CSS BUG */
   .tracker-wrap { display: none !important; }
 
-  /* -- SCROLL ANIMATION -- */
+  /* ── SCROLL ANIMATION ── */
   .fade-up {
     opacity: 0; transform: translateY(40px);
     transition: opacity 0.85s cubic-bezier(0.16,1,0.3,1),
-                transform 0.85s cubic-bezier(0.16,1,0.3,1);
+    transform 0.85s cubic-bezier(0.16,1,0.3,1);
   }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-  /* -- HERO -- */
+  /* ── HERO ── */
   .hero-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -600,7 +600,7 @@ const CSS = `
     .lib-grid { grid-template-columns: 1fr; }
   }
 
-  /* -- ABOUT GRID -- */
+  /* ── ABOUT GRID ── */
   .about-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -608,7 +608,7 @@ const CSS = `
     min-width: 0;
   }
 
-  /* -- SERVICES GRID -- */
+  /* ── SERVICES GRID ── */
   .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -624,7 +624,7 @@ const CSS = `
     flex-shrink: 0;
   }
 
-  /* -- PROJECTS -- */
+  /* ── PROJECTS ── */
   .project-links { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; }
   .project-problem {
     background: rgba(255,255,255,0.45);
@@ -656,7 +656,7 @@ const CSS = `
     color: var(--text); margin-bottom: 0.75rem; letter-spacing: -0.01em;
   }
 
-  /* -- RESEARCH -- */
+  /* ── RESEARCH ── */
   .research-card {
     padding: 2.5rem;
     border-left: 4px solid var(--accent);
@@ -678,7 +678,7 @@ const CSS = `
     font-weight: 700; color: var(--text); line-height: 1.35;
   }
 
-  /* -- LEADERSHIP GRID -- */
+  /* ── LEADERSHIP GRID ── */
   .leadership-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -702,7 +702,7 @@ const CSS = `
   .medal-sub   { font-family: 'Nunito Sans', sans-serif; font-size: 0.75rem; color: var(--faint); }
   .bullet-row { display: flex; align-items: flex-start; gap: 0.65rem; font-family: 'Nunito Sans', sans-serif; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
 
-  /* -- CONTACT -- */
+  /* ── CONTACT ── */
   .contact-card {
     padding: 3.5rem 2.25rem;
     text-align: center;
@@ -730,7 +730,7 @@ const CSS = `
     margin: 0 auto 1.5rem;
   }
 
-  /* -- FOOTER -- */
+  /* ── FOOTER ── */
   .footer {
     position: relative; z-index: 150;
     background: #EBEBEB;
@@ -750,7 +750,7 @@ const CSS = `
   .footer-icon-link { color: var(--faint); transition: color 0.2s; }
   .footer-icon-link:hover { color: var(--text); }
 
-  /* -- TOAST -- */
+  /* ── TOAST ── */
   .toast-host {
     position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
     z-index: 9999; pointer-events: none;
@@ -773,7 +773,7 @@ const CSS = `
     100% { opacity: 0; transform: translateY(-12px) scale(0.95); }
   }
 
-  /* -- EMPTY STATE -- */
+  /* ── EMPTY STATE ── */
   .empty-state {
     text-align: center; padding: 5rem 2rem;
     background: rgba(255,255,255,0.4);
@@ -782,7 +782,7 @@ const CSS = `
   }
   .empty-state h3 { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--text); margin: 1rem 0 0.5rem; }
 
-  /* -- RESPONSIVE: TABLET -- */
+  /* ── RESPONSIVE: TABLET ── */
   @media (min-width: 640px) {
     .about-grid    { grid-template-columns: 1fr 1fr; }
     .hero-grid     { grid-template-columns: 1fr 1fr; }
@@ -791,14 +791,14 @@ const CSS = `
     .hero-image-wrap { margin: 0; }
   }
 
-  /* -- RESPONSIVE: DESKTOP -- */
+  /* ── RESPONSIVE: DESKTOP ── */
   @media (min-width: 1025px) {
     .desktop-only { display: flex !important; }
     .mobile-only  { display: none !important; }
     .about-grid   { grid-template-columns: 5fr 7fr; gap: 4rem; }
   }
 
-  /* -- RESPONSIVE: MOBILE -- */
+  /* ── RESPONSIVE: MOBILE ── */
   @media (max-width: 1024px) {
     .desktop-only { display: none !important; }
     .mobile-only  { display: flex !important; }
@@ -1221,11 +1221,11 @@ function TopProjects({ toLibrary }) {
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "1rem", marginBottom: "1.5rem" }}>
                       <span className="chip chip-accent" style={{ background: `${p.accent}12`, color: p.accent, borderColor: `${p.accent}30` }}>{p.badge}</span>
                       <div className="project-links">
-                        {p.github  && <a href={p.github}  target="_blank" rel="noopener noreferrer" className="btn-icon"><Github size={17} /> Source</a>}
-                        {p.apiDocs && <a href={p.apiDocs} target="_blank" rel="noopener noreferrer" className="btn-icon"><Server size={17} /> API Docs</a>}
-                        {p.live    && <a href={p.live}    target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: p.accent }}><Activity size={17} /> Live Demo</a>}
-                        {p.vercel  && <a href={p.vercel}  target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: p.accent }}><Activity size={17} /> Vercel</a>}
-                        {p.streamlit && <a href={p.streamlit} target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: p.accent }}><Activity size={17} /> Streamlit</a>}
+                        {p.github    && <a href={p.github}    target="_blank" rel="noopener noreferrer" className="btn-icon"><Github size={17} /> Source</a>}
+                        {p.apiDocs   && <a href={p.apiDocs}   target="_blank" rel="noopener noreferrer" className="btn-icon"><Server size={17} /> API Docs</a>}
+                        {p.vercel    && <a href={p.vercel}    target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: p.accent }}><Rocket size={17} /> Vercel Site</a>}
+                        {p.streamlit && <a href={p.streamlit} target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: p.accent }}><Database size={17} /> Streamlit App</a>}
+                        {p.live      && <a href={p.live}      target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: p.accent }}><Activity size={17} /> Live Demo</a>}
                       </div>
                     </div>
 
@@ -1370,7 +1370,7 @@ function Contact({ copyEmail }) {
           <p className="label">Hire Me</p>
           <h2 className="heading" style={{ fontSize: "clamp(2.2rem,5vw,3.8rem)" }}>Let's Build Together</h2>
           <p className="body-text" style={{ maxWidth: 480, margin: "0 auto 2.75rem", fontSize: "1.05rem" }}>
-            My inbox is always open. Whether you have a robust project, a fractional retainer opportunity, or just want to connect - I'll reply within 24 hours.
+            My inbox is always open. Whether you have a robust project, a fractional retainer opportunity, or just want to connect — I'll reply within 24 hours.
           </p>
 
           <div className="card contact-card">
@@ -1460,11 +1460,11 @@ function Library() {
                       {p.title}
                     </h3>
                     <div style={{ display: "flex", gap: "0.65rem", flexShrink: 0, marginTop: "0.2rem" }}>
-                      {p.github  && <a href={p.github}  target="_blank" rel="noopener noreferrer" className="btn-icon"><Github size={18} /></a>}
-                      {p.apiDocs && <a href={p.apiDocs} target="_blank" rel="noopener noreferrer" className="btn-icon"><Server size={18} /></a>}
-                      {p.live    && <a href={p.live}    target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: "#10B981" }}><Activity size={18} /></a>}
-                      {p.vercel  && <a href={p.vercel}  target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: "#10B981" }}><Activity size={18} /></a>}
-                      {p.streamlit && <a href={p.streamlit} target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: "#10B981" }}><Activity size={18} /></a>}
+                      {p.github    && <a href={p.github}    target="_blank" rel="noopener noreferrer" className="btn-icon" title="GitHub"><Github size={18} /></a>}
+                      {p.apiDocs   && <a href={p.apiDocs}   target="_blank" rel="noopener noreferrer" className="btn-icon" title="API Docs"><Server size={18} /></a>}
+                      {p.vercel    && <a href={p.vercel}    target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: "#10B981" }} title="Vercel Site"><Rocket size={18} /></a>}
+                      {p.streamlit && <a href={p.streamlit} target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: "#10B981" }} title="Streamlit App"><Database size={18} /></a>}
+                      {p.live      && <a href={p.live}      target="_blank" rel="noopener noreferrer" className="btn-icon" style={{ color: "#10B981" }} title="Live Demo"><Activity size={18} /></a>}
                     </div>
                   </div>
 
