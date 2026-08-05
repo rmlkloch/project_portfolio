@@ -68,20 +68,21 @@ const SERVICES = [
 const TOP_PROJECTS = [
   {
     id: 2, category: "Applied NLP & Knowledge Retrieval",
-    title: "LeadMe - AI Lead Capture & Auto-Learning FAQ",
+    title: "LeadMe & LeadMe Intel: AI-Powered 24/7 Lead Capture & Predictive Lead Scoring Engine",
     badge: "New Release", accent: "#3B82F6",
     problem: "Businesses lose leads due to unresponsive 24/7 support and pay high costs for complex AI chatbots that hallucinate and lack seamless human handoff.",
-    desc: "A decoupled, zero-cost, cross-platform 24/7 AI chatbot ecosystem built to eliminate customer churn and automate business lead generation. Designed with a strict API-first architecture, it combines a high-speed LLM reasoning engine with Retrieval-Augmented Generation (RAG) and a continuous Human-in-the-Loop (HITL) learning pipeline.",
-    tech: ["Python", "FastAPI", "Groq (Llama 3.1)", "ChromaDB", "SQLite", "Streamlit", "Vanilla JS"],
+    desc: "A decoupled, zero-cost, cross-platform 24/7 AI chatbot ecosystem built to eliminate customer churn and automate business lead generation. With the LeadMe Intel upgrade, the system transforms into a predictive sales engine using real-time ML inference to classify and score inbound leads.",
+    tech: ["FastAPI", "Groq API", "Llama 3.1", "SQLite/SQLAlchemy", "Streamlit", "Predictive Lead Scoring", "Structured Outputs (JSON)", "ChromaDB", "Vanilla JS"],
     github: "https://github.com/rmlkloch/LeadMe.git",
     vercel: "https://lead-me-cyan.vercel.app",
     streamlit: "https://leadme-hacdsgh4dxulmy47v5warf.streamlit.app",
     apiDocs: "https://leadme-backend.onrender.com/docs",
     bullets: [
-      "Zero-Dependency Web Widget: Lightweight JS/CSS embeddable into any client website via a single script tag.",
-      "Ultra-Fast RAG Inference: Utilizes Groq and ChromaDB for sub-second, context-aware semantic retrieval without hallucination.",
-      "Human-in-the-Loop (HITL) Fallback: Autonomously intercepts unknown queries, captures lead contact data, and generates support tickets.",
-      "Self-Learning Memory: Resolving tickets via the admin dashboard instantly re-embeds new knowledge back into ChromaDB for future interactions."
+      "Predictive Intent Classification: Added a real-time ML inference microservice using Groq (Llama 3.1) to analyze customer inquiries before they hit the database.",
+      "Deterministic Metrics: Automatically assigns a Conversion Probability Score (1–100) and a Lead Temperature (Hot 🔥, Warm ☀️, Cold ❄️) based on buying velocity, urgency, and budget signal detection.",
+      "Real-Time Admin Actionability: Upgraded the Streamlit Admin Dashboard to prioritize incoming leads, allowing sales teams to immediately focus on high-intent inquiries.",
+      "Resilient LLM Design: Implemented hardware-level native JSON output enforcement, zero-temperature routing, and fallback error handling to guarantee 99.9% schema reliability.",
+      "Self-Learning Memory & HITL Fallback: Autonomously captures lead contact data for unknown queries, while admin ticket resolution instantly re-embeds new knowledge into ChromaDB."
     ],
   },
   {
@@ -103,9 +104,9 @@ const TOP_PROJECTS = [
 ];
 
 const OTHER_PROJECTS = [
-  { id: 2, title: "LeadMe AI Chatbot Ecosystem", category: "Applied NLP & Knowledge Retrieval", key: "nlp",
-    desc: "Decoupled 24/7 AI chatbot ecosystem with ultra-fast RAG inference (Groq/ChromaDB), automated Human-in-the-Loop lead capture, and a self-learning knowledge base.",
-    tech: ["Python", "FastAPI", "Groq", "ChromaDB", "Streamlit", "Vanilla JS"],
+  { id: 2, title: "LeadMe & LeadMe Intel: AI-Powered 24/7 Lead Capture & Predictive Lead Scoring Engine", category: "Applied NLP & Knowledge Retrieval", key: "nlp",
+    desc: "Decoupled 24/7 AI chatbot ecosystem with ultra-fast RAG inference (Groq/ChromaDB), automated Human-in-the-Loop lead capture, and a new predictive intelligence layer that scores inbound leads (Hot/Warm/Cold) using real-time ML inference.",
+    tech: ["FastAPI", "Groq API", "Llama 3.1", "SQLite/SQLAlchemy", "Streamlit", "Predictive Lead Scoring", "Structured Outputs (JSON)", "ChromaDB", "Vanilla JS"],
     github: "https://github.com/rmlkloch/LeadMe.git",
     vercel: "https://lead-me-cyan.vercel.app",
     streamlit: "https://leadme-hacdsgh4dxulmy47v5warf.streamlit.app",
