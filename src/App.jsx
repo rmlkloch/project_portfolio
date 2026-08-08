@@ -67,6 +67,25 @@ const SERVICES = [
 
 const TOP_PROJECTS = [
   {
+    id: 3, category: "Data Engineering & Business Intelligence",
+    title: "LeadMe Insights: Automated ETL Pipeline & BI Dashboard",
+    badge: "Analytics Expansion", accent: "#8B5CF6",
+    problem: "Traditional 24/7 lead-capture chatbots store conversational logs in raw transactional databases, leaving business owners without visibility into customer conversion rates, peak traffic hours, or unanswered questions.",
+    desc: "An automated Python ETL pipeline and executive analytics dashboard acting as the intelligence layer for the LeadMe chatbot ecosystem. Extracts transactional logs without locking backend operations, cleans relational tables using Pandas, and visualizes proactive metrics.",
+    tech: ["Python", "Pandas", "Power BI", "DAX", "Streamlit", "Plotly", "PostgreSQL", "SQLite", "FastAPI"],
+    github: "https://github.com/rmlkloch/leadme-insights",
+    apiDocs: "https://leadme-insights.onrender.com",
+    streamlit: "https://leadme-insights-qnphpzwueuymq7trzdfkme.streamlit.app/",
+    live: "https://youtu.be/5rU554pfORs",
+    bullets: [
+      "Read-only relational database extraction without backend locks.",
+      "Pandas table merging, timestamp standardization, and null-value cleaning.",
+      "Power BI executive dashboard with custom DAX conversion and resolution measures.",
+      "Streamlit web dashboard with interactive Plotly charts.",
+      "Windows Batch script automation for scheduled pipeline executions."
+    ],
+  },
+  {
     id: 2, category: "Applied NLP & Knowledge Retrieval",
     title: "LeadMe & LeadMe Intel: AI-Powered 24/7 Lead Capture & Predictive Lead Scoring Engine",
     badge: "New Release", accent: "#3B82F6",
@@ -79,7 +98,7 @@ const TOP_PROJECTS = [
     apiDocs: "https://leadme-backend.onrender.com/docs",
     bullets: [
       "Predictive Intent Classification: Added a real-time ML inference microservice using Groq (Llama 3.1) to analyze customer inquiries before they hit the database.",
-      "Deterministic Metrics: Automatically assigns a Conversion Probability Score (1–100) and a Lead Temperature (Hot 🔥, Warm ☀️, Cold ❄️) based on buying velocity, urgency, and budget signal detection.",
+      "Deterministic Metrics: Automatically assigns a Conversion Probability Score (1-100) and a Lead Temperature (Hot 🔥, Warm ☀️, Cold ❄️) based on buying velocity, urgency, and budget signal detection.",
       "Real-Time Admin Actionability: Upgraded the Streamlit Admin Dashboard to prioritize incoming leads, allowing sales teams to immediately focus on high-intent inquiries.",
       "Resilient LLM Design: Implemented hardware-level native JSON output enforcement, zero-temperature routing, and fallback error handling to guarantee 99.9% schema reliability.",
       "Self-Learning Memory & HITL Fallback: Autonomously captures lead contact data for unknown queries, while admin ticket resolution instantly re-embeds new knowledge into ChromaDB."
@@ -104,6 +123,14 @@ const TOP_PROJECTS = [
 ];
 
 const OTHER_PROJECTS = [
+  { id: 3, title: "LeadMe Insights", category: "Data Engineering & Business Intelligence", key: "data-bi",
+    desc: "Automated Python ETL pipeline and executive analytics dashboard connecting the LeadMe chatbot backend to Power BI and Streamlit.",
+    tech: ["Python", "Pandas", "Power BI", "DAX", "Streamlit", "Plotly", "PostgreSQL"],
+    github: "https://github.com/rmlkloch/leadme-insights",
+    streamlit: "https://leadme-insights-qnphpzwueuymq7trzdfkme.streamlit.app/",
+    apiDocs: "https://leadme-insights.onrender.com",
+    live: "https://youtu.be/5rU554pfORs",
+  },
   { id: 2, title: "LeadMe & LeadMe Intel: AI-Powered 24/7 Lead Capture & Predictive Lead Scoring Engine", category: "Applied NLP & Knowledge Retrieval", key: "nlp",
     desc: "Decoupled 24/7 AI chatbot ecosystem with ultra-fast RAG inference (Groq/ChromaDB), automated Human-in-the-Loop lead capture, and a new predictive intelligence layer that scores inbound leads (Hot/Warm/Cold) using real-time ML inference.",
     tech: ["FastAPI", "Groq API", "Llama 3.1", "SQLite/SQLAlchemy", "Streamlit", "Predictive Lead Scoring", "Structured Outputs (JSON)", "ChromaDB", "Vanilla JS"],
@@ -157,6 +184,7 @@ const FILTERS = [
   { label: "Predictive Intelligence & Risk Modeling", key: "predictive" },
   { label: "Autonomous Systems & Computer Vision", key: "cv" },
   { label: "Applied NLP & Knowledge Retrieval", key: "nlp" },
+  { label: "Data Engineering & Business Intelligence", key: "data-bi" },
   { label: "Smart Infrastructure & Optimization", key: "infra" },
   { label: "Bio-Informatics & Healthcare Analytics", key: "bio" },
 ];
