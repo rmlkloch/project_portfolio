@@ -74,8 +74,6 @@ const TOP_PROJECTS = [
     desc: "An automated Python ETL pipeline and executive analytics dashboard acting as the intelligence layer for the LeadMe chatbot ecosystem. Extracts transactional logs without locking backend operations, cleans relational tables using Pandas, and visualizes proactive metrics.",
     tech: ["Python", "Pandas", "Power BI", "DAX", "Streamlit", "Plotly", "PostgreSQL", "SQLite", "FastAPI"],
     github: "https://github.com/rmlkloch/leadme-insights",
-    apiDocs: "https://leadme-insights.onrender.com",
-    streamlit: "https://leadme-insights-qnphpzwueuymq7trzdfkme.streamlit.app/",
     live: "https://youtu.be/5rU554pfORs",
     bullets: [
       "Read-only relational database extraction without backend locks.",
@@ -127,8 +125,6 @@ const OTHER_PROJECTS = [
     desc: "Automated Python ETL pipeline and executive analytics dashboard connecting the LeadMe chatbot backend to Power BI and Streamlit.",
     tech: ["Python", "Pandas", "Power BI", "DAX", "Streamlit", "Plotly", "PostgreSQL"],
     github: "https://github.com/rmlkloch/leadme-insights",
-    streamlit: "https://leadme-insights-qnphpzwueuymq7trzdfkme.streamlit.app/",
-    apiDocs: "https://leadme-insights.onrender.com",
     live: "https://youtu.be/5rU554pfORs",
   },
   { id: 2, title: "LeadMe & LeadMe Intel: AI-Powered 24/7 Lead Capture & Predictive Lead Scoring Engine", category: "Applied NLP & Knowledge Retrieval", key: "nlp",
