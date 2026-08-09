@@ -67,6 +67,23 @@ const SERVICES = [
 
 const TOP_PROJECTS = [
   {
+    id: 4, category: "Applied NLP & Knowledge Retrieval",
+    title: "LeadMe Companion: Mobile-First PWA Support Hub",
+    badge: "New Release", accent: "#F59E0B",
+    problem: "When the automated LeadMe chatbot generates a fallback ticket, business owners needed a frictionless, zero-barrier way to instantly reply to customers from their phones without complex app store installations.",
+    desc: "A lightweight, installable Progressive Web App (PWA) built as the mobile command center for the LeadMe ecosystem. By utilizing Zero-Dependency Vanilla web technologies and modern PWA standards, it allows users to manage and resolve customer support tickets directly from a native-feeling mobile interface.",
+    tech: ["Vanilla JS", "HTML5/CSS3", "Service Workers", "FastAPI", "REST API", "Vercel"],
+    github: "https://github.com/rmlkloch/leadme-companion",
+    vercel: "https://leadme-companion.vercel.app",
+    apiDocs: "https://leadme-backend.onrender.com/docs",
+    bullets: [
+      "Native App-Like Experience: Installable directly to iOS (Safari) and Android (Chrome) home screens without browser navigation bars.",
+      "Offline Asset Caching: Custom Service Worker with a Cache-First strategy ensures instant UI loading even on weak cellular networks.",
+      "Smart Environment Routing: Automatically detects and switches between local development APIs and secure cloud production endpoints.",
+      "Real-Time Ticket Resolution: Seamlessly interfaces with the decoupled FastAPI backend to fetch open tickets and post customer replies."
+    ],
+  },
+  {
     id: 3, category: "Data Engineering & Business Intelligence",
     title: "LeadMe Insights: Automated ETL Pipeline & BI Dashboard",
     badge: "Analytics Expansion", accent: "#8B5CF6",
@@ -86,7 +103,7 @@ const TOP_PROJECTS = [
   {
     id: 2, category: "Applied NLP & Knowledge Retrieval",
     title: "LeadMe & LeadMe Intel: AI-Powered 24/7 Lead Capture & Predictive Lead Scoring Engine",
-    badge: "New Release", accent: "#3B82F6",
+    badge: "Core Ecosystem", accent: "#3B82F6",
     problem: "Businesses lose leads due to unresponsive 24/7 support and pay high costs for complex AI chatbots that hallucinate and lack seamless human handoff.",
     desc: "A decoupled, zero-cost, cross-platform 24/7 AI chatbot ecosystem built to eliminate customer churn and automate business lead generation. With the LeadMe Intel upgrade, the system transforms into a predictive sales engine using real-time ML inference to classify and score inbound leads.",
     tech: ["FastAPI", "Groq API", "Llama 3.1", "SQLite/SQLAlchemy", "Streamlit", "Predictive Lead Scoring", "Structured Outputs (JSON)", "ChromaDB", "Vanilla JS"],
@@ -121,6 +138,13 @@ const TOP_PROJECTS = [
 ];
 
 const OTHER_PROJECTS = [
+  { id: 4, title: "LeadMe Companion PWA", category: "Applied NLP & Knowledge Retrieval", key: "nlp",
+    desc: "A lightweight, installable Progressive Web App (PWA) built as the mobile command center for the LeadMe chatbot ecosystem, featuring offline caching and real-time ticket resolution.",
+    tech: ["Vanilla JS", "HTML5/CSS3", "Service Workers", "FastAPI", "Vercel"],
+    github: "https://github.com/rmlkloch/leadme-companion",
+    vercel: "https://leadme-companion.vercel.app",
+    apiDocs: "https://leadme-backend.onrender.com/docs",
+  },
   { id: 3, title: "LeadMe Insights", category: "Data Engineering & Business Intelligence", key: "data-bi",
     desc: "Automated Python ETL pipeline and executive analytics dashboard connecting the LeadMe chatbot backend to Power BI and Streamlit.",
     tech: ["Python", "Pandas", "Power BI", "DAX", "Streamlit", "Plotly", "PostgreSQL"],
