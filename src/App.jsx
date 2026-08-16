@@ -51,7 +51,7 @@ const PERSONAL = {
 };
 
 const SKILLS = [
-  { category: "Languages",            items: ["Python", "SQL", "C/C++", "R", "JavaScript", "HTML/CSS"] },
+  { category: "Languages",            items: ["Python", "SQL", "C/C++", "R", "JavaScript", "HTML/CSS", "Dart"] },
   { category: "ML & Data",            items: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "OpenCV", "ChromaDB", "Groq"] },
   { category: "Engineering & Cloud",  items: ["Docker", "Kubernetes", "CI/CD", "Snowflake", "FastAPI"] },
 ];
@@ -66,6 +66,22 @@ const SERVICES = [
 ];
 
 const TOP_PROJECTS = [
+  {
+    id: 5, category: "Smart Infrastructure & Optimization",
+    title: "CeylonPath AI: Geospatial Routing & Knowledge Engine",
+    badge: "Flagship Engine", accent: "#F59E0B",
+    problem: "Conventional navigation funnels travelers into saturated hubs, LLMs hallucinate cultural history, and crowdsourced geospatial data is highly vulnerable to spam and keyboard-mashing.",
+    desc: "An intelligent ML and geospatial routing system combining unsupervised corridor clustering (K-Means), algorithmic NLP data governance, and grounded spatial RAG to generate dynamic, personalized, and historically accurate travel corridors.",
+    tech: ["Python", "FastAPI", "Flutter", "Scikit-Learn", "OSRM", "SQLite", "RAG"],
+    github: "https://github.com/rmlkloch/ceylonpath-ai.git",
+    live: "https://youtu.be/7YwbkhQG35M",
+    bullets: [
+      "Geospatial Corridor Clustering: Utilizes Haversine math and K-Means clustering to isolate points of interest within a custom driving polyline buffer.",
+      "Algorithmic NLP Data Governance: Employs TheFuzz phonetic matching and character entropy filtering to automatically reject spam submissions.",
+      "Grounded Spatial RAG Audio: Synthesizes verified archaeological records into text-to-speech (TTS) audio artifacts, eliminating LLM hallucinations.",
+      "On-Device Personalization: Evaluates user interest vectors against POI matrices directly on the Flutter mobile client for zero-cloud latency execution."
+    ],
+  },
   {
     id: 4, category: "Applied NLP & Knowledge Retrieval",
     title: "LeadMe Companion: Mobile-First PWA Support Hub",
@@ -119,25 +135,15 @@ const TOP_PROJECTS = [
       "Self-Learning Memory & HITL Fallback: Autonomously captures lead contact data for unknown queries, while admin ticket resolution instantly re-embeds new knowledge into ChromaDB."
     ],
   },
-  {
-    id: 1, category: "Predictive Intelligence & Risk Modeling",
-    title: "Customer Churn Risk Scoring API",
-    badge: "Featured Deployment", accent: "#10B981",
-    problem: "SaaS startups face high Customer Acquisition Costs (CAC) but lack the technical infrastructure to proactively identify and retain at-risk users before they cancel subscriptions.",
-    desc: "A machine-learning-powered API and interactive dashboard designed to shift retention strategies from reactive to proactive. Processes incoming user behavior payloads to return a real-time probability score and business risk level.",
-    tech: ["Python", "FastAPI", "Random Forest", "Streamlit", "Joblib", "Render"],
-    github: "https://github.com/rmlkloch/customer-churn-risk-api.git",
-    live: "https://customer-churn-risk-api-jsnvxagbpmkhe5msv4ix6l.streamlit.app/",
-    apiDocs: "https://customer-churn-risk-api.onrender.com/docs",
-    bullets: [
-      "Engineered realistic synthetic SaaS dataset & deployed RF model as a live web service.",
-      "Implemented class weight balancing to ensure high recall for churning users.",
-      "Decoupled RESTful API backend allows clients to plug AI directly into React/Next.js apps.",
-    ],
-  },
 ];
 
 const OTHER_PROJECTS = [
+  { id: 5, title: "CeylonPath AI", category: "Smart Infrastructure & Optimization", key: "infra",
+    desc: "Intelligent ML and geospatial routing system combining unsupervised corridor clustering, NLP data governance, and grounded spatial RAG.",
+    tech: ["Python", "FastAPI", "Flutter", "Scikit-Learn", "OSRM", "SQLite", "RAG"],
+    github: "https://github.com/rmlkloch/ceylonpath-ai.git",
+    live: "https://youtu.be/7YwbkhQG35M",
+  },
   { id: 4, title: "LeadMe Companion PWA", category: "Applied NLP & Knowledge Retrieval", key: "nlp",
     desc: "A lightweight, installable Progressive Web App (PWA) built as the mobile command center for the LeadMe chatbot ecosystem, featuring offline caching and real-time ticket resolution.",
     tech: ["Vanilla JS", "HTML5/CSS3", "Service Workers", "FastAPI", "Vercel"],
