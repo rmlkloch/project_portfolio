@@ -85,7 +85,7 @@ const TOP_PROJECTS = [
   {
     id: 4, category: "Applied NLP & Knowledge Retrieval",
     title: "LeadMe Companion: Mobile-First PWA Support Hub",
-    badge: "New Release", accent: "#F59E0B",
+    badge: "Applied NLP & Knowledge Retrieval", accent: "#F59E0B",
     problem: "When the automated LeadMe chatbot generates a fallback ticket, business owners needed a frictionless, zero-barrier way to instantly reply to customers from their phones without complex app store installations.",
     desc: "A lightweight, installable Progressive Web App (PWA) built as the mobile command center for the LeadMe ecosystem. By utilizing Zero-Dependency Vanilla web technologies and modern PWA standards, it allows users to manage and resolve customer support tickets directly from a native-feeling mobile interface.",
     tech: ["Vanilla JS", "HTML5/CSS3", "Service Workers", "FastAPI", "REST API", "Vercel"],
